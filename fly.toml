@@ -1,0 +1,24 @@
+# fly.toml app configuration file generated for my-ollama-demo-1 on 2024-07-25T15:27:07-07:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'my-ollama-demo-1'
+primary_region = 'ord'
+vm.size = "a100-40gb"
+
+[build]
+  image = "ollama/ollama"
+
+[http_service]
+  internal_port = 11434
+  force_https = false
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ["app"]
+
+[mounts]
+  source = "models"
+  destination = "/root/.ollama"
+  initial_size = "100gb"
