@@ -3,7 +3,7 @@
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'my-ollama-demo-1'
+app = 'your-app-name'
 primary_region = 'ord'
 vm.size = "a100-40gb"
 
