@@ -1,4 +1,4 @@
-# Self-hosting Ollama models on Fly.io
+# Self-hosted Ollama app on Fly.io
 
 A simple repo for deploying Ollama on Fly.io.
 
