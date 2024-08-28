@@ -38,7 +38,7 @@ This Ollama app will exist separate from whatever app you're building. Since our
 
 ```bash
 # you don't need -a if you're in the Ollama app directory
-fly proxy 11434:80 -a <your-app>
+$ fly proxy 11434:80 -a <your-app>
 ```
 
 This command creates proxies requests from a local port (`11434`) to port `80` on your Ollama Fly Machine, over a secure Wireguard tunnel.
