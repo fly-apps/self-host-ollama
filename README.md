@@ -41,7 +41,7 @@ This Ollama app will exist separate from whatever app you're building. Since our
 $ fly proxy 11434:80 -a <your-app>
 ```
 
-This command creates proxies requests from a local port (`11434`) to port `80` on your Ollama Fly Machine, over a secure Wireguard tunnel.
+This command proxies requests from a local port (`11434`) to port `80` on your Ollama Fly Machine, over a secure Wireguard tunnel.
 
 When using Ollama in your app **locally**, you'll set the host to `http://localhost:11434`. Note that while `11434` is the standard port used by Ollama, since this is just a proxy, that number can really be anything.
 
