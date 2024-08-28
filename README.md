@@ -45,7 +45,7 @@ This command proxies requests from a local port (`11434`) to port `80` on your O
 
 When using Ollama in your app **locally**, you'll set the host to `http://localhost:11434`. Note that while `11434` is the standard port used by Ollama, since this is just a proxy, that number can really be anything.
 
-In **production**, you'll use the host `http://<your-app>.flycast` instead. Requests to this address will not work from the browser, and need to be run on the backend of 
+In **production**, you'll use the host `http://<your-app>.flycast` instead.
 
 ## Examples
 
