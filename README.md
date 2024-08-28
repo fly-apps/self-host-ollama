@@ -4,6 +4,8 @@ A simple repo for deploying Ollama on Fly.io.
 
 ## Getting started
 
+If you don't already have a Fly.io account, do that first (https://fly.io/app/sign-up), and make sure you have the Fly CLI installed (https://fly.io/docs/flyctl/install/).
+
 First, clone this repository, and feel free to change the `app` name in the `fly.toml`. Then launch it as a new Fly App with:
 
 ```bash
