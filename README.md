@@ -6,11 +6,20 @@ A simple repo for deploying Ollama on Fly.io.
 
 If you don't already have a Fly.io account, do that first (https://fly.io/app/sign-up), and make sure you have the Fly CLI installed (https://fly.io/docs/flyctl/install/).
 
-First, clone this repository, and feel free to change the `app` name in the `fly.toml`. Then launch it as a new Fly App with:
+First, clone this repository and `cd` into the repo directory: 
+
+```bash
+$ git clone https://github.com/fly-apps/self-host-ollama
+$ cd self-host-ollama
+```
+
+Feel free to change the `app` name in the `fly.toml`, and then launch it as a new Fly App with:
 
 ```bash
 $ fly launch --flycast
 ```
+
+When it asks **if you'd like to copy the configuration, say YES.** The `fly.toml` file in this repo is all the configuration you need to deploy this Ollama app.
 
 The `--flycast` flag will make your application private. To access your application, you'll use the address `http://<your-app>.flycast` and ensure you're connected over your Wireguard VPN. This will work in both production and local development. More on this later.
 
